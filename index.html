@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
         :root {
@@ -57,7 +56,7 @@
 
         /* Hero Section */
         header {
-            margin-bottom: 100px;
+            margin-bottom: 60px;
             animation: fadeIn 1s ease-out;
         }
 
@@ -86,6 +85,7 @@
             text-decoration: none;
             font-weight: 600;
             transition: transform 0.2s ease, filter 0.2s ease;
+            margin-bottom: 60px; /* Space before the image */
         }
 
         .cta-button:hover {
@@ -93,9 +93,27 @@
             filter: brightness(0.9);
         }
 
+        /* Hero Image Styling */
+        .hero-image-container {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        .hero-image-container img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
         /* Social Proof Section */
         .testimonial-section {
-            margin-top: 120px;
+            margin-top: 80px;
             padding: 60px 0;
             border-top: 1px solid #ffffff10;
         }
@@ -116,7 +134,7 @@
             max-width: 550px;
             border-radius: 12px;
             overflow: hidden;
-            background: #111; /* Fallback before script loads */
+            background: #111; 
             box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
 
@@ -132,7 +150,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Inter-specific font-feature settings for that "premium" look */
         h1, h2, h3 {
             font-feature-settings: 'cv02', 'cv05', 'cv11';
         }
@@ -145,9 +162,13 @@
         <header>
             <h1>Words that move <br>the needle.</h1>
             <p class="tagline">High-conversion copywriting for visionary founders who want their brand to sound as good as it looks.</p>
-            <a href="https://calendly.com/nurmullick0787/30min" class="cta-button" target="_blank" rel="noopener">Apply for a Strategy Call</a>
+            <a href="#" class="cta-button">Book a Strategy Call</a>
 
-    </header>
+            <!-- Added Image Here -->
+            <div class="hero-image-container">
+                <img src="https://img.sanishtech.com/u/a9835b426fb29766b082625dc17b6174.png" alt="Copywriting visual showcase">
+            </div>
+        </header>
 
         <!-- Social Proof (Embedded Tweet) -->
         <section class="testimonial-section">
